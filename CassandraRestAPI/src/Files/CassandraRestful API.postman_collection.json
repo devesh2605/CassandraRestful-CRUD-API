@@ -1,0 +1,121 @@
+{
+	"variables": [],
+	"info": {
+		"name": "CassandraRestful API",
+		"_postman_id": "086ab2ea-6afa-9064-68de-d57abcb3a0ae",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/CassandraRestAPI/REST/WebService/GetEmployeeData",
+			"request": {
+				"url": "localhost:8080/CassandraRestAPI/REST/WebService/GetEmployeeData",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "This API returns the JSON Object which contains the follwoing details:\n\n1.employeeID\n2.employeeName\n3.employeeCity"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CassandraRestAPI/REST/WebService/InsertEmployeeData",
+			"request": {
+				"url": "localhost:8080/CassandraRestAPI/REST/WebService/InsertEmployeeData",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "employeeId",
+							"value": "E1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "employeeName",
+							"value": "Devesh Vyas",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "employeeCity",
+							"value": "Bangalore",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "This API returns the JSON Object as Success or Failure."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CassandraRestAPI/REST/WebService/UpdateEmployeeData",
+			"request": {
+				"url": "localhost:8080/CassandraRestAPI/REST/WebService/UpdateEmployeeData",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "employeeId",
+							"value": "E1",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "employeeCity",
+							"value": "Chennai",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "This API returns the JSON Object as Success or Failure."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/CassandraRestAPI/REST/WebService/DeleteEmployeeData",
+			"request": {
+				"url": "localhost:8080/CassandraRestAPI/REST/WebService/DeleteEmployeeData",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "employeeId",
+							"value": "E1",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": "This API returns the JSON Object as Success or Failure."
+			},
+			"response": []
+		}
+	]
+}
